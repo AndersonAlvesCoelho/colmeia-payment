@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💳 Colmeia Pagamentos Frontend
+![nestjs](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![postgresql](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Version](https://img.shields.io/badge/V0.1-100000?style=for-the-badge&logo=github&logoColor=white)
 
-## Getting Started
 
-First, run the development server:
+<img src="./public/screenshot.png" alt="Exemplo imagem">
+
+Front-end da aplicação **Colmeia Pagamentos**, construído em **Next.js** com **TypeScript**, focado em integração com a **API Colmeia Pagamentos**.
+
+O sistema utiliza **Radix UI** para componentes acessíveis, **TailwindCSS** para estilização moderna, Context API com arquitetura **MVVM** para controle de estado, e **Framer Motion** para animações fluidas.
+---
+
+## 🚀 Tecnologias
+
+| Categoria | Tecnologia |
+| --- | --- |
+| **Framework** | Next.js |
+| **Linguagem** | TypeScript + React |
+| **UI Library** | Radix UI + TailwindCSS |
+| **Gestão de estado assíncrono** | Context Api (MVVM) |
+| **Formulários** | React Hook Form + Zod |
+
+
+## ⚠️ Status do Projeto
+🔧 O frontend ainda está em desenvolvimento, mas já é possível testar fluxos principais do sistema, incluindo:
+- Cadastro de novos clientes (CRUD completo)
+- Criação de cobranças vinculadas a clientes
+- Acesso e operações apenas com usuários admin pré-criados
+
+## ⚙️ Pré-requisitos
+
+- Node.js >= 20
+- [npm](https://www.npmjs.com/) ou yarn
+- API backend da **Colmeia Pagamentos** rodando localmente ou em ambiente acessível
+
+No diretório do front-end, você pode rodar:
+
+```bash
+npm i
+npm run dev
+```
+---
+
+## 🐣 Rodando o Frontend
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/AndersonAlvesCoelho/colmeia-payment
+cd colmeia-payment
+```
+
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+1. Crie um arquivo `.env.local` com a URL da API:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:8080/api/v1
+```
+
+1. Rode em modo desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O frontend estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> 📍 http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔄 Integração com o Backend
 
-To learn more about Next.js, take a look at the following resources:
+A aplicação consome todos os endpoints do **Colmeia Pagamentos API**, incluindo:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Clientes** → `/api/v1/customer`
+- **Cobranças** → `/api/v1/charges`
+- **Autenticação** → `/api/v1/auth`
+- **Auditoria / Logs** → `/api/v1/audit/logs`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> Certifique-se de que a API back-end está rodando em http://localhost:8080 ou ajuste a variável NEXT_PUBLIC_API_URL.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Observações
+- Este repositório contém somente o front-end da aplicação.
+- O foco atual está em clientes e cobranças (CRUD).
+- Novas telas e módulos (como dashboard e relatórios) estão em desenvolvimento.
+- O sistema foi projetado para integração direta com a Colmeia Pagamentos API.
