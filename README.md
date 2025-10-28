@@ -1,21 +1,19 @@
 # 💳 Colmeia Pagamentos Frontend
-![nestjs](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![postgresql](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![UIShadcn](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff&style=for-the-badge)
 ![Version](https://img.shields.io/badge/V0.1-100000?style=for-the-badge&logo=github&logoColor=white)
-
 
 <img src="./public/screenshot.png" alt="Exemplo imagem">
 
 Front-end da aplicação **Colmeia Pagamentos**, construído em **Next.js** com **TypeScript**, focado em integração com a **API Colmeia Pagamentos**.
 
 O sistema utiliza **Radix UI** para componentes acessíveis, **TailwindCSS** para estilização moderna, Context API com arquitetura **MVVM** para controle de estado, e **Framer Motion** para animações fluidas.
----
 
 ## 🚀 Tecnologias
 
 | Categoria | Tecnologia |
-| --- | --- |
+| | |
 | **Framework** | Next.js |
 | **Linguagem** | TypeScript + React |
 | **UI Library** | Radix UI + TailwindCSS |
@@ -41,7 +39,6 @@ No diretório do front-end, você pode rodar:
 npm i
 npm run dev
 ```
----
 
 ## 🐣 Rodando o Frontend
 
@@ -74,7 +71,6 @@ O frontend estará disponível em:
 
 > 📍 http://localhost:3000
 
----
 
 ## 🔄 Integração com o Backend
 
@@ -87,7 +83,8 @@ A aplicação consome todos os endpoints do **Colmeia Pagamentos API**, incluind
 
 > Certifique-se de que a API back-end está rodando em http://localhost:8080 ou ajuste a variável NEXT_PUBLIC_API_URL.
 
----
+> 🔗 [Repositório Backend](https://github.com/AndersonAlvesCoelho/api-payment-colmeia)
+
 
 ## 📝 Observações
 - Este repositório contém somente o front-end da aplicação.
